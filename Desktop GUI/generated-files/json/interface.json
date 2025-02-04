@@ -1,0 +1,40 @@
+{
+  "QPushButton": [
+    {
+      "name": "menuBtn",
+      "icon": "Qss/icons/icons/feather/menu.png"
+    },
+    {
+      "name": "pushButton",
+      "icon": "Qss/icons/icons/font_awesome/brands/creative-commons-pd-alt.png"
+    },
+    {
+      "name": "pushButton_2",
+      "icon": "Qss/icons/icons/font_awesome/brands/salesforce.png"
+    },
+    {
+      "name": "pushButton_3",
+      "icon": "Qss/icons/icons/font_awesome/brands/angellist.png"
+    },
+    {
+      "name": "pushButton_4",
+      "icon": "Qss/icons/icons/material_design/aod.png"
+    },
+    {
+      "name": "pushButton_5",
+      "icon": "Qss/icons/icons/feather/settings.png"
+    },
+    {
+      "name": "pushButton_6",
+      "icon": "Qss/icons/icons/feather/info.png"
+    },
+    {
+      "name": "pushButton_7",
+      "icon": "Qss/icons/icons/feather/help-circle.png"
+    },
+    {
+      "name": "pushButton_8",
+      "icon": "Qss/icons/icons/feather/x-circle.png"
+    }
+  ]
+}
