@@ -35,6 +35,36 @@
     {
       "name": "pushButton_8",
       "icon": "Qss/icons/icons/feather/x-circle.png"
+    },
+    {
+      "name": "notificationBtn_2",
+      "icon": "Qss/icons/icons/material_design/notifications.png"
+    },
+    {
+      "name": "moreBtn_2",
+      "icon": "Qss/icons/icons/feather/more-horizontal.png"
+    },
+    {
+      "name": "profileBtn_2",
+      "icon": "Qss/icons/icons/feather/user.png"
+    },
+    {
+      "name": "minimizeBtn_2",
+      "icon": "Qss/icons/icons/feather/window_minimize.png"
+    },
+    {
+      "name": "restorebtn_2",
+      "icon": "Qss/icons/icons/feather/window_undock.png"
+    },
+    {
+      "name": "closeBtn_2",
+      "icon": "Qss/icons/icons/feather/window_close.png"
+    }
+  ],
+  "QLabel": [
+    {
+      "name": "label_10",
+      "pixmap": "Qss/icons/icons/feather/search.png"
     }
   ]
 }
