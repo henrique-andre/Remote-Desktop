@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>936</width>
-    <height>510</height>
+    <width>987</width>
+    <height>556</height>
    </rect>
   </property>
   <property name="font">
@@ -49,7 +49,7 @@
           <item>
            <widget class="QPushButton" name="pushButton">
             <property name="text">
-             <string>Prime</string>
+             <string>Home</string>
             </property>
             <property name="icon">
              <iconset resource="../Qss/icons/_icons.qrc">
@@ -60,7 +60,7 @@
           <item>
            <widget class="QPushButton" name="pushButton_2">
             <property name="text">
-             <string>Teste</string>
+             <string>Data Analysis</string>
             </property>
             <property name="icon">
              <iconset resource="../Qss/icons/_icons.qrc">
@@ -71,7 +71,7 @@
           <item>
            <widget class="QPushButton" name="pushButton_3">
             <property name="text">
-             <string>Teste1</string>
+             <string>Reports</string>
             </property>
             <property name="icon">
              <iconset resource="../Qss/icons/_icons.qrc">
@@ -82,7 +82,7 @@
           <item>
            <widget class="QPushButton" name="pushButton_4">
             <property name="text">
-             <string>Teste2</string>
+             <string>Graphs</string>
             </property>
             <property name="icon">
              <iconset resource="../Qss/icons/_icons.qrc">
@@ -183,6 +183,9 @@
        </item>
        <item>
         <widget class="QStackedWidget" name="stackedWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
          <widget class="QWidget" name="settingsPage">
           <layout class="QVBoxLayout" name="verticalLayout_6">
            <item>
@@ -228,7 +231,7 @@
                   </widget>
                  </item>
                  <item>
-                  <widget class="QComboBox" name="comboBox"/>
+                  <widget class="QComboBox" name="themeList"/>
                  </item>
                 </layout>
                </widget>
@@ -296,6 +299,21 @@
        <item alignment="Qt::AlignTop">
         <widget class="QWidget" name="header" native="true">
          <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
           <item>
            <widget class="QLabel" name="titleTxt_2">
             <property name="text">
@@ -312,6 +330,21 @@
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
              <item>
               <widget class="QPushButton" name="notificationBtn_2">
                <property name="text">
@@ -349,7 +382,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="searchinpCont_2">
+           <widget class="QFrame" name="searchinpCont">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -357,6 +390,21 @@
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
              <item>
               <widget class="QLabel" name="label_10">
                <property name="minimumSize">
@@ -383,10 +431,20 @@
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEdit_2"/>
+              <widget class="QLineEdit" name="searchinp">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="placeholderText">
+                <string>Search...</string>
+               </property>
+              </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_10">
+              <widget class="QPushButton" name="searchBtn">
                <property name="text">
                 <string>Ctrl+ K</string>
                </property>
@@ -404,6 +462,21 @@
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
              <item>
               <widget class="QPushButton" name="minimizeBtn_2">
                <property name="text">
@@ -445,13 +518,52 @@
        </item>
        <item>
         <widget class="QWidget" name="mainContents" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
           <item>
            <widget class="QWidget" name="mainPagesCont" native="true">
             <layout class="QVBoxLayout" name="verticalLayout_11">
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
              <item>
               <widget class="QStackedWidget" name="stackedWidget_2">
-               <widget class="QWidget" name="homePage">
+               <property name="currentIndex">
+                <number>3</number>
+               </property>
+               <widget class="QWidget" name="dataAnalysisPage">
                 <layout class="QVBoxLayout" name="verticalLayout_12">
                  <item>
                   <widget class="QLabel" name="label_8">
@@ -465,12 +577,40 @@
                  </item>
                 </layout>
                </widget>
-               <widget class="QWidget" name="dataAnalysisPage">
+               <widget class="QWidget" name="homePage">
                 <layout class="QVBoxLayout" name="verticalLayout_13">
                  <item>
                   <widget class="QLabel" name="label_9">
                    <property name="text">
-                    <string>Data Analy</string>
+                    <string>Home Page</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="reportsPage">
+                <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <item>
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string>Reports Page</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="page">
+                <layout class="QVBoxLayout" name="verticalLayout_14">
+                 <item>
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string>Charts Page</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
@@ -485,7 +625,104 @@
            </widget>
           </item>
           <item>
-           <widget class="QWidget" name="menuDireito" native="true"/>
+           <widget class="QWidget" name="menuDireito" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>0</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_15">
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QWidget" name="widget_6" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_8">
+                <item>
+                 <widget class="QLabel" name="label_13">
+                  <property name="text">
+                   <string>Right Menu</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_9">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="../Qss/icons/_icons.qrc">
+                    <normaloff>:/feather/icons/feather/x-circle.png</normaloff>:/feather/icons/feather/x-circle.png</iconset>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QStackedWidget" name="stackedWidget_3">
+               <property name="currentIndex">
+                <number>2</number>
+               </property>
+               <widget class="QWidget" name="notificationsPage">
+                <layout class="QVBoxLayout" name="verticalLayout_16">
+                 <item>
+                  <widget class="QLabel" name="label_14">
+                   <property name="text">
+                    <string>Notification</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="morePage">
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <item>
+                  <widget class="QLabel" name="label_15">
+                   <property name="text">
+                    <string>More</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="profilePage">
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <item>
+                  <widget class="QLabel" name="label_16">
+                   <property name="text">
+                    <string>Profile</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </item>
          </layout>
         </widget>
@@ -493,7 +730,22 @@
        <item alignment="Qt::AlignBottom">
         <widget class="QWidget" name="footer" native="true">
          <layout class="QHBoxLayout" name="horizontalLayout_4">
-          <item>
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <item alignment="Qt::AlignLeft">
            <widget class="QLabel" name="label_6">
             <property name="text">
              <string>Teste Andre</string>
@@ -516,7 +768,7 @@
                </property>
               </widget>
              </item>
-             <item>
+             <item alignment="Qt::AlignHCenter">
               <widget class="QProgressBar" name="progressBar">
                <property name="value">
                 <number>24</number>

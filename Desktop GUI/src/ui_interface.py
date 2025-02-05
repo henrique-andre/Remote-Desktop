@@ -23,7 +23,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(936, 510)
+        MainWindow.resize(987, 556)
         font = QFont()
         font.setPointSize(10)
         MainWindow.setFont(font)
@@ -184,10 +184,10 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.label_3)
 
-        self.comboBox = QComboBox(self.frame)
-        self.comboBox.setObjectName(u"comboBox")
+        self.themeList = QComboBox(self.frame)
+        self.themeList.setObjectName(u"themeList")
 
-        self.horizontalLayout_3.addWidget(self.comboBox)
+        self.horizontalLayout_3.addWidget(self.themeList)
 
 
         self.verticalLayout_7.addWidget(self.frame)
@@ -240,7 +240,9 @@ class Ui_MainWindow(object):
         self.header = QWidget(self.maiBody)
         self.header.setObjectName(u"header")
         self.horizontalLayout_6 = QHBoxLayout(self.header)
+        self.horizontalLayout_6.setSpacing(5)
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.horizontalLayout_6.setContentsMargins(5, 5, 5, 5)
         self.titleTxt_2 = QLabel(self.header)
         self.titleTxt_2.setObjectName(u"titleTxt_2")
 
@@ -251,7 +253,9 @@ class Ui_MainWindow(object):
         self.frame_6.setFrameShape(QFrame.StyledPanel)
         self.frame_6.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_10 = QHBoxLayout(self.frame_6)
+        self.horizontalLayout_10.setSpacing(5)
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
+        self.horizontalLayout_10.setContentsMargins(5, 5, 5, 5)
         self.notificationBtn_2 = QPushButton(self.frame_6)
         self.notificationBtn_2.setObjectName(u"notificationBtn_2")
         icon9 = QIcon()
@@ -284,7 +288,9 @@ class Ui_MainWindow(object):
         self.searchinpCont_2.setFrameShape(QFrame.StyledPanel)
         self.searchinpCont_2.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_11 = QHBoxLayout(self.searchinpCont_2)
+        self.horizontalLayout_11.setSpacing(0)
         self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
+        self.horizontalLayout_11.setContentsMargins(5, 5, 5, 5)
         self.label_10 = QLabel(self.searchinpCont_2)
         self.label_10.setObjectName(u"label_10")
         self.label_10.setMinimumSize(QSize(16, 16))
@@ -294,15 +300,16 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_11.addWidget(self.label_10)
 
-        self.lineEdit_2 = QLineEdit(self.searchinpCont_2)
-        self.lineEdit_2.setObjectName(u"lineEdit_2")
+        self.searchinp = QLineEdit(self.searchinpCont_2)
+        self.searchinp.setObjectName(u"searchinp")
+        self.searchinp.setMinimumSize(QSize(100, 0))
 
-        self.horizontalLayout_11.addWidget(self.lineEdit_2)
+        self.horizontalLayout_11.addWidget(self.searchinp)
 
-        self.pushButton_10 = QPushButton(self.searchinpCont_2)
-        self.pushButton_10.setObjectName(u"pushButton_10")
+        self.searchBtn = QPushButton(self.searchinpCont_2)
+        self.searchBtn.setObjectName(u"searchBtn")
 
-        self.horizontalLayout_11.addWidget(self.pushButton_10)
+        self.horizontalLayout_11.addWidget(self.searchBtn)
 
 
         self.horizontalLayout_6.addWidget(self.searchinpCont_2)
@@ -312,7 +319,9 @@ class Ui_MainWindow(object):
         self.frame_7.setFrameShape(QFrame.StyledPanel)
         self.frame_7.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_12 = QHBoxLayout(self.frame_7)
+        self.horizontalLayout_12.setSpacing(5)
         self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
+        self.horizontalLayout_12.setContentsMargins(5, 0, 5, 5)
         self.minimizeBtn_2 = QPushButton(self.frame_7)
         self.minimizeBtn_2.setObjectName(u"minimizeBtn_2")
         icon12 = QIcon()
@@ -345,36 +354,67 @@ class Ui_MainWindow(object):
 
         self.mainContents = QWidget(self.maiBody)
         self.mainContents.setObjectName(u"mainContents")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Expanding)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.mainContents.sizePolicy().hasHeightForWidth())
+        self.mainContents.setSizePolicy(sizePolicy1)
         self.horizontalLayout_7 = QHBoxLayout(self.mainContents)
+        self.horizontalLayout_7.setSpacing(5)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
+        self.horizontalLayout_7.setContentsMargins(5, 5, 5, 5)
         self.mainPagesCont = QWidget(self.mainContents)
         self.mainPagesCont.setObjectName(u"mainPagesCont")
         self.verticalLayout_11 = QVBoxLayout(self.mainPagesCont)
+        self.verticalLayout_11.setSpacing(5)
         self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        self.verticalLayout_11.setContentsMargins(5, 5, 5, 5)
         self.stackedWidget_2 = QStackedWidget(self.mainPagesCont)
         self.stackedWidget_2.setObjectName(u"stackedWidget_2")
-        self.homePage = QWidget()
-        self.homePage.setObjectName(u"homePage")
-        self.verticalLayout_12 = QVBoxLayout(self.homePage)
+        self.dataAnalysisPage = QWidget()
+        self.dataAnalysisPage.setObjectName(u"dataAnalysisPage")
+        self.verticalLayout_12 = QVBoxLayout(self.dataAnalysisPage)
         self.verticalLayout_12.setObjectName(u"verticalLayout_12")
-        self.label_8 = QLabel(self.homePage)
+        self.label_8 = QLabel(self.dataAnalysisPage)
         self.label_8.setObjectName(u"label_8")
         self.label_8.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_12.addWidget(self.label_8)
 
-        self.stackedWidget_2.addWidget(self.homePage)
-        self.dataAnalysisPage = QWidget()
-        self.dataAnalysisPage.setObjectName(u"dataAnalysisPage")
-        self.verticalLayout_13 = QVBoxLayout(self.dataAnalysisPage)
+        self.stackedWidget_2.addWidget(self.dataAnalysisPage)
+        self.homePage = QWidget()
+        self.homePage.setObjectName(u"homePage")
+        self.verticalLayout_13 = QVBoxLayout(self.homePage)
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
-        self.label_9 = QLabel(self.dataAnalysisPage)
+        self.label_9 = QLabel(self.homePage)
         self.label_9.setObjectName(u"label_9")
         self.label_9.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_13.addWidget(self.label_9)
 
-        self.stackedWidget_2.addWidget(self.dataAnalysisPage)
+        self.stackedWidget_2.addWidget(self.homePage)
+        self.reportsPage = QWidget()
+        self.reportsPage.setObjectName(u"reportsPage")
+        self.horizontalLayout_14 = QHBoxLayout(self.reportsPage)
+        self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
+        self.label_11 = QLabel(self.reportsPage)
+        self.label_11.setObjectName(u"label_11")
+        self.label_11.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_14.addWidget(self.label_11)
+
+        self.stackedWidget_2.addWidget(self.reportsPage)
+        self.page = QWidget()
+        self.page.setObjectName(u"page")
+        self.verticalLayout_14 = QVBoxLayout(self.page)
+        self.verticalLayout_14.setObjectName(u"verticalLayout_14")
+        self.label_12 = QLabel(self.page)
+        self.label_12.setObjectName(u"label_12")
+        self.label_12.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_14.addWidget(self.label_12)
+
+        self.stackedWidget_2.addWidget(self.page)
 
         self.verticalLayout_11.addWidget(self.stackedWidget_2)
 
@@ -383,6 +423,67 @@ class Ui_MainWindow(object):
 
         self.menuDireito = QWidget(self.mainContents)
         self.menuDireito.setObjectName(u"menuDireito")
+        self.menuDireito.setMinimumSize(QSize(200, 0))
+        self.verticalLayout_15 = QVBoxLayout(self.menuDireito)
+        self.verticalLayout_15.setSpacing(5)
+        self.verticalLayout_15.setObjectName(u"verticalLayout_15")
+        self.verticalLayout_15.setContentsMargins(5, 5, 5, 5)
+        self.widget_6 = QWidget(self.menuDireito)
+        self.widget_6.setObjectName(u"widget_6")
+        self.horizontalLayout_8 = QHBoxLayout(self.widget_6)
+        self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
+        self.label_13 = QLabel(self.widget_6)
+        self.label_13.setObjectName(u"label_13")
+
+        self.horizontalLayout_8.addWidget(self.label_13)
+
+        self.pushButton_9 = QPushButton(self.widget_6)
+        self.pushButton_9.setObjectName(u"pushButton_9")
+        self.pushButton_9.setIcon(icon8)
+
+        self.horizontalLayout_8.addWidget(self.pushButton_9)
+
+
+        self.verticalLayout_15.addWidget(self.widget_6)
+
+        self.stackedWidget_3 = QStackedWidget(self.menuDireito)
+        self.stackedWidget_3.setObjectName(u"stackedWidget_3")
+        self.notificationsPage = QWidget()
+        self.notificationsPage.setObjectName(u"notificationsPage")
+        self.verticalLayout_16 = QVBoxLayout(self.notificationsPage)
+        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
+        self.label_14 = QLabel(self.notificationsPage)
+        self.label_14.setObjectName(u"label_14")
+        self.label_14.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_16.addWidget(self.label_14)
+
+        self.stackedWidget_3.addWidget(self.notificationsPage)
+        self.morePage = QWidget()
+        self.morePage.setObjectName(u"morePage")
+        self.horizontalLayout_9 = QHBoxLayout(self.morePage)
+        self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
+        self.label_15 = QLabel(self.morePage)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_9.addWidget(self.label_15)
+
+        self.stackedWidget_3.addWidget(self.morePage)
+        self.profilePage = QWidget()
+        self.profilePage.setObjectName(u"profilePage")
+        self.horizontalLayout_13 = QHBoxLayout(self.profilePage)
+        self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
+        self.label_16 = QLabel(self.profilePage)
+        self.label_16.setObjectName(u"label_16")
+        self.label_16.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_13.addWidget(self.label_16)
+
+        self.stackedWidget_3.addWidget(self.profilePage)
+
+        self.verticalLayout_15.addWidget(self.stackedWidget_3)
+
 
         self.horizontalLayout_7.addWidget(self.menuDireito)
 
@@ -392,11 +493,13 @@ class Ui_MainWindow(object):
         self.footer = QWidget(self.maiBody)
         self.footer.setObjectName(u"footer")
         self.horizontalLayout_4 = QHBoxLayout(self.footer)
+        self.horizontalLayout_4.setSpacing(5)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.horizontalLayout_4.setContentsMargins(5, 5, 5, 5)
         self.label_6 = QLabel(self.footer)
         self.label_6.setObjectName(u"label_6")
 
-        self.horizontalLayout_4.addWidget(self.label_6)
+        self.horizontalLayout_4.addWidget(self.label_6, 0, Qt.AlignLeft)
 
         self.frame_2 = QFrame(self.footer)
         self.frame_2.setObjectName(u"frame_2")
@@ -413,7 +516,7 @@ class Ui_MainWindow(object):
         self.progressBar.setObjectName(u"progressBar")
         self.progressBar.setValue(24)
 
-        self.horizontalLayout_5.addWidget(self.progressBar)
+        self.horizontalLayout_5.addWidget(self.progressBar, 0, Qt.AlignHCenter)
 
 
         self.horizontalLayout_4.addWidget(self.frame_2, 0, Qt.AlignHCenter)
@@ -437,16 +540,21 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
+        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget_2.setCurrentIndex(3)
+        self.stackedWidget_3.setCurrentIndex(2)
+
+
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.menuBtn.setText("")
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Prime", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Teste", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Teste1", None))
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Teste2", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Data Analysis", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Reports", None))
+        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Graphs", None))
         self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"Settings", None))
         self.pushButton_6.setText(QCoreApplication.translate("MainWindow", u"Information", None))
         self.pushButton_7.setText(QCoreApplication.translate("MainWindow", u"help", None))
@@ -461,12 +569,20 @@ class Ui_MainWindow(object):
         self.moreBtn_2.setText("")
         self.profileBtn_2.setText("")
         self.label_10.setText("")
-        self.pushButton_10.setText(QCoreApplication.translate("MainWindow", u"Ctrl+ K", None))
+        self.searchinp.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search...", None))
+        self.searchBtn.setText(QCoreApplication.translate("MainWindow", u"Ctrl+ K", None))
         self.minimizeBtn_2.setText("")
         self.restorebtn_2.setText("")
         self.closeBtn_2.setText("")
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"Data Analysis Page", None))
-        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Data Analy", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Home Page", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Reports Page", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"Charts Page", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Right Menu", None))
+        self.pushButton_9.setText("")
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Notification", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"More", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Profile", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Teste Andre", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Theme Progress", None))
     # retranslateUi

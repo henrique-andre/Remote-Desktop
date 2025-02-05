@@ -59,6 +59,10 @@
     {
       "name": "closeBtn_2",
       "icon": "Qss/icons/icons/feather/window_close.png"
+    },
+    {
+      "name": "pushButton_9",
+      "icon": "Qss/icons/icons/feather/x-circle.png"
     }
   ],
   "QLabel": [
