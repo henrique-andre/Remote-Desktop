@@ -382,7 +382,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="searchinpCont_2">
+           <widget class="QFrame" name="searchinpCont">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>

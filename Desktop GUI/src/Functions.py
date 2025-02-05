@@ -33,7 +33,7 @@ class GuiFunctions():
             description="Searching...",
             icon=self.main.theme.PATH_RESOURCES+"feather/search.png", #icon path from theme resources
             isClosable=True,
-            target=self.ui.searchinpCont_2, #put tip overlay under search input
+            target=self.ui.searchinpCont, #put tip overlay under search input
             parent=self.main,
             deleteOnClose=True,
             duration=-1, #set duration to -1 to prevent auto-close

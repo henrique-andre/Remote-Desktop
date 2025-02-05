@@ -283,15 +283,15 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.frame_6)
 
-        self.searchinpCont_2 = QFrame(self.header)
-        self.searchinpCont_2.setObjectName(u"searchinpCont_2")
-        self.searchinpCont_2.setFrameShape(QFrame.StyledPanel)
-        self.searchinpCont_2.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_11 = QHBoxLayout(self.searchinpCont_2)
+        self.searchinpCont = QFrame(self.header)
+        self.searchinpCont.setObjectName(u"searchinpCont")
+        self.searchinpCont.setFrameShape(QFrame.StyledPanel)
+        self.searchinpCont.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_11 = QHBoxLayout(self.searchinpCont)
         self.horizontalLayout_11.setSpacing(0)
         self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
         self.horizontalLayout_11.setContentsMargins(5, 5, 5, 5)
-        self.label_10 = QLabel(self.searchinpCont_2)
+        self.label_10 = QLabel(self.searchinpCont)
         self.label_10.setObjectName(u"label_10")
         self.label_10.setMinimumSize(QSize(16, 16))
         self.label_10.setMaximumSize(QSize(16, 16))
@@ -300,19 +300,19 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_11.addWidget(self.label_10)
 
-        self.searchinp = QLineEdit(self.searchinpCont_2)
+        self.searchinp = QLineEdit(self.searchinpCont)
         self.searchinp.setObjectName(u"searchinp")
         self.searchinp.setMinimumSize(QSize(100, 0))
 
         self.horizontalLayout_11.addWidget(self.searchinp)
 
-        self.searchBtn = QPushButton(self.searchinpCont_2)
+        self.searchBtn = QPushButton(self.searchinpCont)
         self.searchBtn.setObjectName(u"searchBtn")
 
         self.horizontalLayout_11.addWidget(self.searchBtn)
 
 
-        self.horizontalLayout_6.addWidget(self.searchinpCont_2)
+        self.horizontalLayout_6.addWidget(self.searchinpCont)
 
         self.frame_7 = QFrame(self.header)
         self.frame_7.setObjectName(u"frame_7")
